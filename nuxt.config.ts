@@ -3,10 +3,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   app: {
+    baseURL: '/academiccv/',  // ✅ comma added
+
     head: {
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+        { rel: 'icon', type: 'image/png', href: '/academiccv/favicon.png' }
       ]
     }
   }

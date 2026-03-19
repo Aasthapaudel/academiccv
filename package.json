@@ -6,7 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
      "build": "nuxt generate",
-   "deploy": "gh-pages -d .output/public",
+  "deploy": "npm run build && cd .output/public && git init && git checkout -b gh-pages && git add . && git commit -m 'Deploy Nuxt site' && git remote add origin git@github.com:Aasthapaudel/academiccv.git && git push origin gh-pages --force"  ,
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
